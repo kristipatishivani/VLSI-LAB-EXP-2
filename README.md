@@ -128,16 +128,16 @@ endmodule
 
 OUTPUT WAVEFORM
  # Encoder
- ![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/6748cf1c-4dd9-4d17-a61c-951f723c9aef)
- # Decoder
- ![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/deed9451-82f5-4f91-accb-b1f433d3c697)
- # Multiplexer
- ![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/db03e1d6-41f3-477f-96e9-91592e79ee70)
- # Demultiplexer
- ![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/4cb6d4c4-76b4-4d82-8b46-5ba1cfd1a2ab)
- # MAGNITUDE COMPARATOR
-![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/f552eeb7-4c26-4cb3-b2d0-a7aa0b5eda58)
- 
+![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/23a87e78-323c-4dfa-be7f-5b58d3011b3b)
+# Decoder
+![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/7b17b9f3-1288-4fa5-ae69-c6bd819ecfaf)
+# Multiplexer
+![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/31efe0e8-1fcf-4e74-b31c-8cbdd258e51f)
+# Demultiplexer
+![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/4504e215-7c78-4566-a6a0-8e2a52c007c5)
+# Magnitude Comparator
+![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/fbee10be-34d5-4598-9222-85f41ebe08ee)
+
 RESULT
 Hence ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, MAGNITUDE COMPARATOR are simulated and synthesised using Xilinx ISE
 
