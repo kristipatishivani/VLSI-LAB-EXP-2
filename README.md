@@ -99,6 +99,7 @@ d7=(in & s2 & s1 &s0);
 endmodule
 ```
 # MAGNITUDE COMPARATOR
+```
 module magcomp(a,b,l,g,e);
 input [3:0]a,b;
 output reg l,g,e;
@@ -125,7 +126,6 @@ end
 end
 endmodule
 ```
-
 OUTPUT WAVEFORM
  # Encoder
 ![image](https://github.com/kristipatishivani/VLSI-LAB-EXP-2/assets/161432255/23a87e78-323c-4dfa-be7f-5b58d3011b3b)
