@@ -4,7 +4,8 @@ AIM:
  To simulate and synthesis ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, MAGNITUDE COMPARATOR using Xilinx ISE.
 
 APPARATUS REQUIRED:
-vivado 2023.2.
+Xilinx 14.7
+Spartan6 FPGA
 
 PROCEDURE:
 STEP:1  Start  the Xilinx navigator, Select and Name the New project.
