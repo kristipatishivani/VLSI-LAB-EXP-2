@@ -1,60 +1,55 @@
-SIMULATION AND IMPLEMENTATION OF  COMBINATIONAL LOGIC CIRCUITS
+EXP-2
 
-AIM: 
- To simulate and synthesis ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, MAGNITUDE COMPARATOR using Xilinx ISE.
+date:
+
+                                                SIMULATION AND IMPLEMENTATION OF  COMBINATIONAL LOGIC CIRCUITS
+
+AIM: To simulate and synthesis ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, MAGNITUDE COMPARATOR using vivado 2023.
 
 APPARATUS REQUIRED:
-Xilinx 14.7
-Spartan6 FPGA
+vivado 2023.3
 
-**LOGIC DIAGRAM**
+procedure:
 
-ENCODER
+Open Vivado: Launch Xilinx Vivado software on your computer.
 
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/3cd1f95e-7531-4cad-9154-fdd397ac439e)
+Create a New Project: Click on "Create Project" from the welcome page or navigate through "File" > "Project" > "New".
+
+Project Settings: Follow the prompts to set up your project. Specify the project name, location, and select RTL project type.
+
+Add Design Files: Add your Verilog design files to the project. You can do this by right-clicking on "Design Sources" in the Sources window, then selecting "Add Sources". Choose your Verilog files from the file browser.
+
+Specify Simulation Settings: Go to "Simulation" > "Simulation Settings". Choose your simulation language (Verilog in this case) and simulation tool (Vivado Simulator).
+
+Run Simulation: Go to "Flow" > "Run Simulation" > "Run Behavioral Simulation". This will launch the Vivado Simulator and compile your design for simulation.
+
+Set Simulation Time: In the Vivado Simulator window, set the simulation time if it's not set automatically. This determines how long the simulation will run.
+
+Run Simulation: Start the simulation by clicking on the "Run" button in the simulation window.
+
+View Results: After the simulation completes, you can view waveforms, debug signals, and analyze the behavior of your design.
+
+LOGIC DIAGRAM ENCODER
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/161432255/048c477f-b0ae-4599-bc5f-5b2b39da36db)
+
+verilog code
+
+module encoder(a,y);
+input [7:0]a;
+output[2:0]y;
+or(y[2],a[6],a[5],a[4],a[3]);
+or(y[1],a[6],a[5],a[2],a[1]);
+or(y[0],a[6],a[4],a[2],a[0]);
+endmodule
+```
+
+output
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/161432255/546a746b-f8dd-401a-9c84-dbd04ca790fd)
 
 
-DECODER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/45a5e6cf-bbe0-4fd5-ac84-e5ad4477483b)
 
 
-MULTIPLEXER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/427f75b2-8e67-44b9-ac45-a66651787436)
-
-
-DEMULTIPLEXER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/1c45a7fc-08ac-4f76-87f2-c084e7150557)
-
-
-MAGNITUDE COMPARATOR
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/b2fe7a05-6bf7-4dcb-8f5d-28abbf7ea8c2)
-
-
-  
-PROCEDURE:
-STEP:1  Start  the Xilinx navigator, Select and Name the New project.
-STEP:2  Select the device family, device, package and speed.       
-STEP:3  Select new source in the New Project and select Verilog Module as the Source type.                       
-STEP:4  Type the File Name and Click Next and then finish button. Type the code and save it.
-STEP:5  Select the Behavioral Simulation in the Source Window and click the check syntax.                       
-STEP:6  Click the simulation to simulate the program and  give the inputs and verify the outputs as per the truth table.               
-STEP:7  Select the Implementation in the Sources Window and select the required file in the Processes Window.
-STEP:8  Select Check Syntax from the Synthesize  XST Process. Double Click in the  FloorplanArea/IO/Logic-Post Synthesis process in the User Constraints process group. UCF(User constraint File) is obtained. 
-STEP:9  In the Design Object List Window, enter the pin location for each pin in the Loc column Select save from the File menu.
-STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
-STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
-
-VERILOG CODE
-
-   <<< TYPE YOUR VERILOG CODE >>>
-
-OUTPUT WAVEFORM
- <<< PASTE YOUR OUTPUT WAVEFORM >>>
-
-RESULT
 
 
